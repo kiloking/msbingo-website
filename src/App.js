@@ -14,7 +14,7 @@ function App() {
         onContextMenu={(e)=> { e.preventDefault(); setToggleThisElement(false); setToggleThisFail((prev) => !prev) }}
         
       >
-        <div className='z-10 text-2xl text-center font-semibold whitespace-pre-wrap group-hover:text-4xl transition-all '>{title}</div> 
+        <div className='z-10 text-2xl text-center font-semibold whitespace-pre-wrap group-hover:text-2xl transition-all '>{title}</div> 
         <div className={'bg-[#b1fcd0] w-full h-full  absolute ' + (toggleThisElement  ? '  block' : ' hidden') }></div>
         <div className={'bg-[#595959] w-full h-full  absolute ' + (toggleThisFail  ? '  block' : ' hidden')}></div>
       </div>
