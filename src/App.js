@@ -9,12 +9,12 @@ function App() {
     return(
       <div 
         key={id} 
-        className="bg-white rounded-md flex justify-center items-center aspect-square w-full h-full relative overflow-hidden cursor-pointer p-8  "
+        className="bg-white rounded-md flex justify-center items-center aspect-square w-full h-full relative overflow-hidden cursor-pointer p-4  "
         onClick={() => {setToggleThisFail(false); setToggleThisElement((prev) => !prev) }}
         onContextMenu={(e)=> { e.preventDefault(); setToggleThisElement(false); setToggleThisFail((prev) => !prev) }}
         
       >
-        <div className='z-10 text-2xl text-center font-semibold'>{title}</div> 
+        <div className='z-10 text-2xl text-center font-semibold whitespace-pre-wrap'>{title}</div> 
         <div className={'bg-[#b1fcd0] w-full h-full  absolute ' + (toggleThisElement  ? '  block' : ' hidden') }></div>
         <div className={'bg-[#595959] w-full h-full  absolute ' + (toggleThisFail  ? '  block' : ' hidden')}></div>
       </div>

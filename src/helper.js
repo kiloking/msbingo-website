@@ -1,7 +1,7 @@
 export const data = [
   {
     id:'1',
-    title: '家齊哪裡畢業'
+    title: '家齊\n哪裡畢業'
   },
   {
     id:'2',
@@ -9,15 +9,15 @@ export const data = [
   },
   {
     id:'3',
-    title: '電腦臉在方舟開什麼課'
+    title: '電腦臉\n在方舟開\n什麼課'
   },
   {
     id:'4',
-    title: '辦員旅 VS 發獎金'
+    title: '辦員旅\nVS\n發獎金'
   },
   {
     id:'5',
-    title: '方舟在哪一區'
+    title: '方舟在\n哪一區'
   },
   {
     id:'6',
@@ -29,19 +29,19 @@ export const data = [
   },
   {
     id:'8',
-    title: '金馬59最佳視效預測'
+    title: '金馬59\n最佳視效\n預測'
   },
   {
     id:'9',
-    title: '電腦臉成立年分'
+    title: '電腦臉\n成立年分'
   },
   {
     id:'10',
-    title: '影響動畫產業的標竿事件'
+    title: '影響動畫\n產業的\n標竿事件'
   },
   {
     id:'11',
-    title: '三人合作誰是 PM'
+    title: '三人合作\n誰是PM'
   },
   {
     id:'12',
@@ -49,15 +49,15 @@ export const data = [
   },
   {
     id:'13',
-    title: '一句話介紹公司'
+    title: '一句話\n介紹公司'
   },
   {
     id:'14',
-    title: '夢想方舟的英文'
+    title: '夢想方舟\n的英文'
   },
   {
     id:'15',
-    title: '好作品VS高預算'
+    title: '好作品\nVS\n高預算'
   },
   {
     id:'16',
@@ -65,31 +65,31 @@ export const data = [
   },
   {
     id:'17',
-    title: '寫出一部動畫長片'
+    title: '寫出一部\n動畫長片'
   },
   {
     id:'18',
-    title: '好的工作夥伴特質*3'
+    title: '好的工作\n夥伴特質\n*3'
   },
   {
     id:'19',
-    title: '一個字形容高雄'
+    title: '一個字\n形容高雄'
   },
   {
     id:'20',
-    title: '何者不是罡風的作品'
+    title: '何者\n不是罡風\n的作品'
   },
   {
     id:'21',
-    title: '夢想做過的電影'
+    title: '夢想做過\n的電影'
   },
   {
     id:'22',
-    title: '通才 VS 專才'
+    title: '通才\nVS\n專才'
   },
   {
     id:'23',
-    title: '猴子哪裡人'
+    title: '猴子\n哪裡人'
   },
   {
     id:'24',
@@ -97,6 +97,6 @@ export const data = [
   },
   {
     id:'25',
-    title: '台灣原創動畫長片'
+    title: '台灣原創\n動畫長片'
   }
 ]
