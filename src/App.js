@@ -1,24 +1,8 @@
 import React, { useState } from 'react';
 import {data} from './helper'
 function App() {
-  const [success, setSuccess] = useState('0')
-  const [fail, setFail] = useState('0')
-  const handleClick = (e,id) => {
-    if (e.type === 'click' ){
-      setSuccess(id)
-      setFail('0')
-      console.log(id)
-    } 
-  };
-  const handleRightClick = (e,id) => {
-    e.preventDefault();
-    if (e.type === 'contextmenu' ){
 
-      setFail(id)
-      setSuccess('0')
-      console.log(id)
-    } 
-  };
+
   const ToggleItem = ({title,id}) => {
     const [toggleThisElement, setToggleThisElement] = useState(false);
     const [toggleThisFail, setToggleThisFail] = useState(false);
