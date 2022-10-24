@@ -9,7 +9,7 @@ function App() {
     return(
       <div 
         key={id} 
-        className="bg-white rounded-md flex justify-center items-center aspect-square w-full h-full relative overflow-hidden cursor-pointer p-4  "
+        className="bg-white rounded-lg flex justify-center items-center aspect-square w-full h-full relative overflow-hidden cursor-pointer p-4  "
         onClick={() => {setToggleThisFail(false); setToggleThisElement((prev) => !prev) }}
         onContextMenu={(e)=> { e.preventDefault(); setToggleThisElement(false); setToggleThisFail((prev) => !prev) }}
         
