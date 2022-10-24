@@ -19,6 +19,23 @@ function App() {
       console.log(id)
     } 
   };
+  const ToggleItem = ({title,id}) => {
+    const [toggleThisElement, setToggleThisElement] = useState(false);
+    const [toggleThisFail, setToggleThisFail] = useState(false);
+    return(
+      <div 
+        key={id} 
+        className="bg-white rounded-md flex justify-center items-center aspect-square w-full h-full relative overflow-hidden cursor-pointer p-8  "
+        onClick={() => {setToggleThisFail(false); setToggleThisElement((prev) => !prev) }}
+        onContextMenu={(e)=> { e.preventDefault(); setToggleThisElement(false); setToggleThisFail((prev) => !prev) }}
+        
+      >
+        <div className='z-10 text-2xl text-center font-semibold'>{title}</div> 
+        <div className={'bg-[#b1fcd0] w-full h-full  absolute ' + (toggleThisElement  ? '  block' : ' hidden') }></div>
+        <div className={'bg-[#595959] w-full h-full  absolute ' + (toggleThisFail  ? '  block' : ' hidden')}></div>
+      </div>
+    )
+  }
  
   return (
     <div className="App bg-black">
@@ -26,17 +43,7 @@ function App() {
         {data &&
         data.map((item,index)=>{
           return(
-            <div 
-              key={item.id} 
-              className="bg-white rounded-md flex justify-center items-center aspect-square w-full h-full relative overflow-hidden cursor-pointer p-8  "
-              onClick={(e) => handleClick(e,item.id)}
-              onContextMenu={(e)=>handleRightClick(e,item.id)}
-              
-            >
-              <div className='z-10 text-2xl text-center font-semibold'>{item.title}</div> 
-              <div className={'bg-[#b1fcd0] w-full h-full  absolute ' + (item.id === success ? '  block' : ' hidden') }></div>
-              <div className={'bg-[#595959] w-full h-full  absolute ' + (item.id === fail ? '  block' : ' hidden')}></div>
-            </div>
+            <ToggleItem id={item.id} title={item.title} />
           )
         })}
       </div>
